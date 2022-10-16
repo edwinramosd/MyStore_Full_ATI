@@ -7,12 +7,21 @@
   <test thread-count="5" name="Test_All(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
+      <class name="com.mystore.testcases.IndexPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="verifyLogo"/>
+          <include name="loadConfig"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.mystore.testcases.IndexPageTest -->
       <class name="com.mystore.testcases.AccountCreationPageTest">
         <methods>
           <include name="loadConfig"/>
           <include name="afterSuite"/>
           <include name="setup"/>
-          <include name="createAccountTest" invocation-numbers="1"/>
+          <include name="createAccountTest" invocation-numbers="0 1"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.mystore.testcases.AccountCreationPageTest -->
