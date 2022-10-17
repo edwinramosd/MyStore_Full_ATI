@@ -6,8 +6,9 @@
       <class name="com.mystore.testcases.AccountCreationPageTest">
         <methods>
           <include name="loadConfig"/>
-          <include name="verifyCreateAccountPageTest"/>
+          <include name="afterSuite"/>
           <include name="setup"/>
+          <include name="createAccountTest"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.mystore.testcases.AccountCreationPageTest -->
